@@ -1,0 +1,124 @@
+body {
+  background-color: #ffe6e6;
+  font-family: system-ui;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 300px;
+}
+
+#main-image {
+  height: 200px;
+  border: 1px solid gray;
+  transition: all 1s ease;
+}
+
+#main-image:hover {
+  filter: invert(1);
+}
+
+.btn-container {
+  margin-top: 15px;
+}
+.our-story {
+  max-width: 700px;
+  padding: 0px 15px;
+  border: 1px solid gray;
+
+  font-size: 20px;
+  margin-top: 25px;
+}
+
+.rotate {
+  animation: rotation 0.5s 1 ease-in-out;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.hidden {
+  display: none !important;
+}
+
+.textarea_container {
+  margin-top: 15px;
+}
+
+textarea {
+  max-width: 700px;
+  width: 95vw;
+  height: 300px;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.btn_replace {
+  float: right;
+}
+
+button {
+  background-color: #df233f;
+  color: white;
+  padding: 8px 20px;
+}
+
+.button1 {
+  border: 0.1em solid #424242;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.button1:hover {
+  background-color: #c20030;
+}
+
+.textShineBlack {
+  background: linear-gradient(
+    to left,
+    #000 0%,
+    #c20030 30%,
+    #c20030 70%,
+    #000 80%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: textShine 2s infinite;
+}
+
+@keyframes textShine {
+  to {
+    background-position: 200%;
+  }
+}
+
+.hand-border {
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  padding: 1em;
+  line-height: 1.5em;
+  background: hsla(67, 95%, 95%, 1);
+  border: solid 5px #df233f;
+}
+
+audio {
+  display: none;
+}
